@@ -1,0 +1,26 @@
+"ID",Type,SKU,Name
+44,variable,woo-vneck-tee,V-Neck T-Shirt
+45,variable,woo-hoodie,Hoodie
+46,simple,woo-hoodie-with-logo,Hoodie with Logo
+47,simple,woo-tshirt,T-Shirt
+48,simple,woo-beanie,Beanie
+58,simple,woo-belt,Belt
+60,simple,woo-cap,Cap
+62,simple,woo-sunglasses,Sunglasses
+64,simple,woo-hoodie-with-pocket,Hoodie with Pocket
+66,simple,woo-hoodie-with-zipper,Hoodie with Zipper
+68,simple,woo-long-sleeve-tee,Long Sleeve Tee
+70,simple,woo-polo,Polo
+73,"simple, downloadable, virtual",woo-album,Album
+75,"simple, downloadable, virtual",woo-single,Single
+76,variation,woo-vneck-tee-red,V-Neck T-Shirt - Red
+77,variation,woo-vneck-tee-green,V-Neck T-Shirt - Green
+78,variation,woo-vneck-tee-blue,V-Neck T-Shirt - Blue
+79,variation,woo-hoodie-red,"Hoodie - Red, No"
+80,variation,woo-hoodie-green,"Hoodie - Green, No"
+81,variation,woo-hoodie-blue,"Hoodie - Blue, No"
+83,simple,Woo-tshirt-logo,T-Shirt with Logo
+85,simple,Woo-beanie-logo,Beanie with Logo
+87,grouped,logo-collection,Logo Collection
+89,external,wp-pennant,WordPress Pennant
+90,variation,woo-hoodie-blue-logo,Hoodie-Blue Yes
