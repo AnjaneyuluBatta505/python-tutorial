@@ -28,8 +28,20 @@
 
     Distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)
 8. Write a program to check whether a given number is even or odd using the modulo (%) operator.
-9. Write a program to calculate the factorial of a given number using a loop and arithmetic operators.
-10. Write a program to check whether a given year is a leap year or not using arithmetic operators.
+9. Write a program to check whether a given year is a leap year or not using arithmetic operators.
 
 ## Comparison Operators
+1. Write a program to take two numbers from the user and compare the numbers and print if they are equal.
+2. Write a program to take two numbers from the user and compare the numbers and print if one is greater than the other.
+3. Write a program to take two strings from the user and compare the strings and check if they are equal ignoring the case.
+4. Write a program to take two numbers i.e `num1` and `num2` from the user. Also, take one more number from the user i.e `num3` and check if the number is between the given numbers i.e `num1` and `num2`.
 
+## Assignment Operators
+
+## Logical Operators
+
+## Bitwise Operators
+
+## Membership Operators
+
+## Identity Operators
