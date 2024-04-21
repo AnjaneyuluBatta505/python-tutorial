@@ -64,6 +64,13 @@
 
 ## Bitwise Operators
 
+1. Write a program to take two numbers from the user and perform bitwise AND operator i.e `&` on the numbers and print the output.
+2. Write a program to take two numbers from the user and perform bitwise OR operator i.e `|` on the numbers and print the output.
+3. Write a program to take two numbers from the user and perform bitwise XOR operator i.e `^` on the numbers and print the output.
+4. Write a program to take two numbers from the user and perform bitwise NOT operator i.e `~` on the numbers and print the output.
+5. Write a program to take two numbers from the user and perform left shift `<<` operator and print the output.
+6. Write a program to take two numbers from the user and perform right shift `>>` operator and print the output.
+
 ## Membership Operators
 
 ## Identity Operators
