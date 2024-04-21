@@ -9,8 +9,10 @@
     4. division (`/`)
 2. Write a program to take width and breadth of a rectange from the user and calculate area and permimeter of rectangle. 
 3. Write a program to convert temperature from Celsius to Fahrenheit and vice versa using the following formulas:
+
     Celsius to Fahrenheit: F = (C * 9/5) + 32
     Fahrenheit to Celsius: C = (F - 32) * 5/9
+
 4. Write a program to calculate the simple interest for a given principal amount, rate of interest, and time period using the formula:
 
     Simple Interest = (Principal * Rate * Time) / 100
