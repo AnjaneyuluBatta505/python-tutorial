@@ -31,10 +31,15 @@
 9. Write a program to check whether a given year is a leap year or not using arithmetic operators.
 
 ## Comparison Operators
-1. Write a program to take two numbers from the user and compare the numbers and print if they are equal.
-2. Write a program to take two numbers from the user and compare the numbers and print if one is greater than the other.
-3. Write a program to take two strings from the user and compare the strings and check if they are equal ignoring the case.
-4. Write a program to take two numbers i.e `num1` and `num2` from the user. Also, take one more number from the user i.e `num3` and check if the number is between the given numbers i.e `num1` and `num2`.
+
+1. Write a program to take two numbers i.e `num1` and `num2` from the user and compare `num1` and `num2` using operator `>` and print the output.
+2. Write a program to take two numbers i.e `num1` and `num2` from the user and compare `num1` and `num2` using operator `<` and print the output.
+3. Write a program to take two numbers i.e `num1` and `num2` from the user and compare `num1` and `num2` using operator `>=` and print the output.
+4. Write a program to take two numbers i.e `num1` and `num2` from the user and compare `num1` and `num2` using operator `<=` and print the output.
+5. Write a program to take two strings i.e `s1` and `s2` from the user and compare `s1` and `s2` using operator `>` and print the output.
+6. Write a program to take two strings i.e `s1` and `s2` from the user and compare `s1` and `s2` using operator `<` and print the output.
+7. Write a program to take two strings i.e `s1` and `s2` from the user and compare `s1` and `s2` using operator `<=` and print the output.
+8. Write a program to take two strings i.e `s1` and `s2` from the user and compare `s1` and `s2` using operator `>=` and print the output.
 
 ## Assignment Operators
 
