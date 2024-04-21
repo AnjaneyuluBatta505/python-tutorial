@@ -43,6 +43,17 @@
 
 ## Assignment Operators
 
+1. Write a program to create a variable named `name` and assign value `Abdul Kalam`.
+2. Write a program to take a number from the user and increase it by 3 and print the output.
+3. Write a program to take a number from the user and decrease it by 5 and print the output.
+4. Write a program to take a number from the user and multiply it by 2 and print the output.
+5. Write a program to take a number from the user and devide it by 4 and print the output.
+6. Write a program to take a number from the user and devide it by 3 and find the reminder and print the output.
+7. Write a program to take a number from the user and devide it by 5 and find the quotient and print the output.
+8. Write a program to take a number from the user and increase it to the power of 2 and print the output.
+
+> Note: Only use one variable to store the output.
+
 ## Logical Operators
 
 ## Bitwise Operators
