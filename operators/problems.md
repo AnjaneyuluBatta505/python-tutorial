@@ -77,3 +77,21 @@
 2. Write a program to take a number from the user and check if the numer is not in given numbers i.e `numbers = (1, 2, 5, 7, 11)`.
 
 ## Identity Operators
+
+1. Guess the output of the below program.
+
+   ```python
+   list1 = [1, 2, 3]
+   list2 = list1
+
+   print(list1 is list2)
+   ```
+   
+2. Guess the output of the below program.
+
+   ```python
+   x = 10
+   y = 20
+
+   print(x is not y) 
+   ```
