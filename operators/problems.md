@@ -73,4 +73,7 @@
 
 ## Membership Operators
 
+1. Write a program to take a name from the user and check if it's in the given list `names` i.e `names = ["john", "bob", "krish", "venki"]` and print the result.
+2. Write a program to take a number from the user and check if the numer is not in given numbers i.e `numbers = (1, 2, 5, 7, 11)`.
+
 ## Identity Operators
