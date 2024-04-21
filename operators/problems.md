@@ -56,6 +56,12 @@
 
 ## Logical Operators
 
+1. Write a program to check if a given number is both even and greater than 10.
+2. Write a program to take a alphabet letter from the user and check if a user's input is a vowel i.e one of `('a', 'e', 'i', 'o', 'u')`.
+3. Write a program to take a number from the user and check if the given number is either divisible by 2 or 3 but not both.
+
+> Note: print `True` if it's divisible by 2 or 3 otherwise `False`
+
 ## Bitwise Operators
 
 ## Membership Operators
