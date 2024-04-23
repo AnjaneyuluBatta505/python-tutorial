@@ -8,4 +8,19 @@
     
     > Note: sum = ( num * ( num + 1 ) ) / 2
 
-6. 
+6. write a program to find sum of below complex numbers.
+
+    ```
+    x = 3+5j
+    y = 5j
+    z = -5j
+    ```
+7. write a program to find the data type using `type` built-in function for below data.
+    ```python
+    num1 = 100
+    num2 = 123.67
+    num3 = 4+6j
+    ```
+8. write a program to take parts `a`, `b` of a complex number i.e `a+bj` and create the complex number.
+    > Note: use `complex` built-in function.
+9. write a program to take two digit number from the user and reverse it. 
