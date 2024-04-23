@@ -17,4 +17,19 @@
       output = not v or not d
       print(output)
       ```
-   
+  
+   3. 
+      ```python
+      val = True
+      y = True
+      a = not (not y or val)
+      print(a)
+      ```
+    
+   4. 
+       ```python
+       val = True
+       y = False
+       a = not (not y or val)
+       print(a)
+       ```
