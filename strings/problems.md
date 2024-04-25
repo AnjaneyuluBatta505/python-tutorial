@@ -7,7 +7,7 @@
 2. write program to take first name and last name from the user and print full name.
 3. write a program to take input as users full name and find length of the string.
 4. write a program to take a sentense, word from the user and check whether the word is substring of sentense or not.
-5. write a program to take a two strings from the user and check if string2 is not in string1.
+5. write a program to take a two strings from the user and check if `string2` is not in `string1`.
 6. Guess the output for the below program
    ```python
    s = "Python is awesome!"
@@ -20,4 +20,4 @@
 8. write a program to take string from the user and convert it to lower case.
 9. write a program to take string1 and string2 and find total number of occurences of string2 in string1.
 10. write a program to take word from the user and check if it's ends with `ing`?
-11. 
+11. write a program to center string "wow" with length of 20.
