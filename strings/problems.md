@@ -38,4 +38,16 @@
     > Note: use string methods `startswith()` and `endswith()`
 20. write a program to check if given string has only alphabets.
 21. write a program to check if given string has only alphabets and numbers.
-22. 
+22. Guess the output of the blow program.
+   ```
+   s1 = "John"
+   s2 = "Linn"
+   output = "{}{}".format(s1, s2)
+   print(output)
+   output = "{1}{0}".format(s1, s2)
+   print(output)
+   output = "{s1} {s2}".format(s1=s1, s2=s2)
+   print(output)
+   output = "{s2} {s1}".format(s2=s1, s1=s2)
+   print(output)
+   ```
