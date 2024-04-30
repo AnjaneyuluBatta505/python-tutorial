@@ -51,3 +51,6 @@
    output = "{s2} {s1}".format(s2=s1, s1=s2)
    print(output)
    ```
+23. write a program to find the last index of a substring in the given string.
+24. write a program to convert uppercase letters to lower case and vise versa.
+25. write a  program to convert the given string to title case.
