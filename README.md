@@ -6,3 +6,4 @@
 4. [Numbers](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/numbers)
 5. [Strings](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/strings)
 6. [Tuples](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/tuples)
+6. [Frozensets](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/frozensets)
