@@ -8,3 +8,4 @@
 6. [Tuples](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/tuples)
 7. [Frozensets](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/frozensets)
 8. [Lists](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/list)
+9. [Sets](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/sets)
