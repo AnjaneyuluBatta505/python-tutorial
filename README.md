@@ -11,4 +11,6 @@
 9. [Sets](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/sets)
 10. [Dict](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/dicts)
 11. [if...else..](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/if-elif-else)
+12. [for loop](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/for-loop)
+
 
