@@ -26,6 +26,7 @@
 24. Convert hexadecimal to decimal using a while loop.
 25. Convert hexadecimal to binary using a while loop.
 26. Convert hexadecimal to octal using a while loop.
+27. Find multiplication of squares of digits of a given number using while loop.
 28. Count the number of digits in a number using a while loop.
 29. Find the factorial of each digit in a number using a while loop.
 30. Find the median of elements in an array using a while loop.
