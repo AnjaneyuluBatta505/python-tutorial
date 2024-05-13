@@ -14,3 +14,5 @@
 12. [for loop](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/for-loop)
 13. [while loop](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/while-loop)
 14. [functions](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/functions)
+15. [Classes and Objects](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/classes-and-objects)
+16. [Inheritance](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/inheritance)
