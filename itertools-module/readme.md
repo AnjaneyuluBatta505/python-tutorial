@@ -16,12 +16,11 @@
 ```python
 from itertools import count
 
-def count_10():
-    counter = count(start=1)
-    for num in counter:
-        print(num)
-        if num == 10:
-            break
+counter = count(start=1)
+for num in counter:
+    print(num)
+    if num == 10:
+        break
 ```
 
 ### cycle(sequence)
@@ -74,8 +73,9 @@ for num in iter:
 ```python
 from itertools import accumulate
 
-total = accumulate([1,2,3,4,5], lambda x, y: x + y)
-print(total)
+iterator = accumulate([1,2,3,4,5], lambda x, y: x + y)
+for item in iterator:
+    print(item)
 ```
 
 ### chain(iter1, iter2, ...)
@@ -100,7 +100,7 @@ for item in iterator:
 from itertools import chain
 
 iterator = chain.from_iterable([[1,2], {3,4}, 'ABC'])
-for item initerator:
+for item in iterator:
     print(item)
 ```
 
@@ -179,7 +179,7 @@ for key, group in iterator:
 * Make an iterator that returns selected elements from the iterable.
 
 ```python
-from collections import islice
+from itertools import islice
 
 iterator = islice("hello python", 0, 8, 2)
 for item in iterator:
@@ -191,7 +191,7 @@ for item in iterator:
 * Return successive overlapping pairs taken from the input iterable.
 
 ```python
-from collections import pairwise
+from itertools import pairwise
 
 iterator = pairwise('ABCD')
 for pair in iterator:
@@ -228,7 +228,7 @@ def less_than_6(num):
 
 data = [1, 2, 3, 6, 4, 1]
 
-result = takewhile(add, data)
+result = takewhile(less_than_6, data)
 
 for item in result:
     print(item)
@@ -242,9 +242,8 @@ for item in result:
 from itertools import tee
 
 items = [1,2,3,4]
-iterable = iter(items)
 
-iterables = tee(iterable, 2)
+iterables = tee(items, 2)
 for item in iterables[0]:
     print(item)
 
@@ -263,7 +262,7 @@ students = ["A", "B", "C", "D"]
 grades = [1, 2]
 iterator = zip_longest(students, grades, fillvalue="-")
 
-for item in iterator
+for item in iterator:
     print(item)
 ```
 
