@@ -17,3 +17,4 @@
 15. [Classes and Objects](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/classes-and-objects)
 16. [Inheritance](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/inheritance)
 17. [Method Overloading & Overriding](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/method-overloading-overriding)
+18. [File reading and writing](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/file-handling)
