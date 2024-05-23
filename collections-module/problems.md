@@ -12,3 +12,17 @@
 9. Write a function to convert a list of dictionaries to a list of `namedtuple` objects.
 10. Create a namedtuple called `Employee` with `name`, `position`, and `salary`. Write a method to give a raise to an employee.
 
+## dequeue
+
+11.  Create a `deque` of integers from 1 to 10. Perform and print the results of basic operations: append, appendleft, pop, and popleft.
+12.  Write a function to rotate a `deque` n steps to the right.
+13.  Implement a queue using a `deque`. Provide methods for enqueue and dequeue.
+14.  Implement a stack using a `deque`. Provide methods for push and pop.
+15.  Write a function to reverse the elements in a `deque`.
+16.  Write a function to find the maximum and minimum elements in a `deque`.
+17.  Implement a sliding window maximum function using a `deque`.
+18.  Write a function to remove all instances of a given value from a `deque`.
+19.  Create a `deque` and perform insert operations at both ends. Print the final `deque`.
+20.  Write a function to merge two deques into one.
+
+## Counter
