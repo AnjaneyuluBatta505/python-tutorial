@@ -26,3 +26,53 @@
 20.  Write a function to merge two deques into one.
 
 ## Counter
+
+21.  Count the occurrences of each character in a string using `Counter`.
+22.  Write a function to count the frequency of words in a given text using `Counter`.
+23.  Write a function to find the most common element in a list using `Counter`.
+24.  Write a function to find the least common element in a list using `Counter`.
+25.  Use `Counter` to count the number of each type of item in a list of tuples representing items and their types.
+26.  Write a function to find elements that appear more than n times in a list using `Counter`.
+27.  Write a function to compare two `Counter` objects and return the elements that are common.
+28.  Write a function to subtract counts of one `Counter` from another.
+29.  Write a function to merge two `Counter` objects by adding their counts.
+30.  Write a function to convert a `Counter` object to a dictionary.
+
+## OrderedDict
+
+31.  Create an `OrderedDict` and perform basic operations like setting, getting, and deleting items. Print the results.
+32.  Write a function to check if two `OrderedDict` objects are equal.
+33.  Write a function to move a specified item to the end of an `OrderedDict`.
+34.  Write a function to pop the first item from an `OrderedDict`.
+35.  Write a function to sort an `OrderedDict` by keys.
+36.  Write a function to sort an `OrderedDict` by values.
+37.  Write a function to convert a dictionary to an `OrderedDict`.
+38.  Write a function to merge two `OrderedDict` objects.
+39.  Write a function to reverse the order of items in an `OrderedDict`.
+40.  Create an `OrderedDict` to count the occurrences of elements in a list while maintaining their order of first occurrence.
+
+## defaultdict
+
+41.  Create a `defaultdict` with default type `int`. Perform basic operations like setting and getting items. Print the results.
+42.  Write a function to group words by their first letter using a `defaultdict` of lists.
+43.  Write a function to count the frequency of characters in a string using `defaultdict`.
+44.  Write a function to create a nested dictionary using `defaultdict`.
+45.  Write a function to merge two `defaultdict` objects.
+46.  Write a function to create a `defaultdict` of sets and demonstrate adding items.
+47.  Write a function to convert a regular dictionary to a `defaultdict`.
+48.  Write a function to remove all entries from a `defaultdict`.
+49.  Write a function to find the longest list in a `defaultdict` of lists.
+50.  Create a `defaultdict` to store the index positions of each element in a list.
+
+## ChainMap
+
+51.  Create two dictionaries and merge them using `ChainMap`. Access values from the merged map.
+52.  Write a function to update a key-value pair in a `ChainMap`.
+53.  Write a function to add a new dictionary to an existing `ChainMap`.
+54.  Write a function to remove the first dictionary from a `ChainMap`.
+55.  Write a function to check if a key exists in a `ChainMap`.
+56.  Write a function to find the length of a `ChainMap`.
+57.  Write a function to iterate over all key-value pairs in a `ChainMap`.
+58.  Write a function to convert a `ChainMap` to a regular dictionary.
+59.  Write a function to filter `ChainMap` items based on a condition.
+60.  Write a function to access nested dictionaries using `ChainMap`.
