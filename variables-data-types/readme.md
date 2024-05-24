@@ -1,7 +1,5 @@
 # Python - Variable and data types
 
-### Variables and Data Types in Python
-
 #### Variables in Python
 
 * A variable in Python is a named location used to store data in memory.
