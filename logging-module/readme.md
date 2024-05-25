@@ -35,3 +35,53 @@ def calculate_simple_interest(p, t, r):
 if __name__ == '__main__':
     interest = calculate_simple_interest(1000, 12, 0.2)
 ```
+
+## log handlers
+
+* Handlers are used to direct log messages to various outputs or destinations.
+* Logger can have multiple handlers, and each handler can have different logging levels.
+* When a log event occurs, the logger sends the event to all of its handlers.
+
+    * Lets assume logger has two handlers 1. FileHandler 2. StreamHandler
+    * If log event occurs then it will be sent and processed by the attached two handlers. Such as being written to a file and displayed on the console simultaneously.
+ 
+Example: 
+
+```python
+import logging
+
+logger = logging.getLogger('dev')
+logger.setLevel(logging.INFO)
+
+fileHandler = logging.FileHandler('test.log')
+fileHandler.setLevel(logging.INFO)
+
+consoleHandler = logging.StreamHandler()
+consoleHandler.setLevel(logging.INFO)
+
+logger.addHandler(fileHandler)
+logger.addHandler(consoleHandler)
+
+logger.info('information message')
+```
+
+## logging config
+
+* It does basic configuration for the logging system by creating a stream handler with a default formatter.
+* The debug, info, warning, error and critical call basicConfig automatically if no handlers are defined for the root logger.
+
+```python
+import logging
+
+logging.basicConfig(
+    filename='/tmp/test.log',
+    format='%(filename)s: %(message)s',
+    level=logging.DEBUG
+)
+
+logging.debug('This is a debug message')
+logging.info('This is an info message')
+logging.warning('This is a warning message')
+logging.error('This is an error message')
+logging.critical('This is a critical message')
+```
