@@ -97,5 +97,31 @@ urls = [
 
 for url in urls:
     print(f"URL: {url} -> Domain: {extract_domain(url)}")
+```
 
+### Extract dates from text
+
+```python
+import re
+
+def find_dates(text):
+    # Define the regex pattern for matching dates in the format DD/MM/YYYY
+    date_pattern = r'\b(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})\b'
+    
+    # Find all matches of the pattern in the text
+    dates = re.findall(date_pattern, text)
+    
+    # Reconstruct the full date from the matched groups
+    full_dates = ['/'.join(date) for date in dates]
+    
+    return full_dates
+
+# Example usage
+text = """
+Here are some dates: 23/04/2021, 05/11/2020, and an invalid date 32/13/2020.
+Also, check 01/01/2000 and 29/02/2024 for leap year considerations.
+"""
+
+dates = find_dates(text)
+print(dates)
 ```
