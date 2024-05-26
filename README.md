@@ -28,6 +28,6 @@
 26. [Collections Module](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/collections-module)
 27. [Itertools Module](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/itertools-module)
 28. [Logging Module](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/logging-module)
-29. [Reggular expressions]()
+29. [Reggular expressions](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/regex-module)
 30. [Exceptions handling]()
 31. [Pip Packages]()
