@@ -34,51 +34,44 @@
 *   `re.split()`: Splits a string by the occurrences of the regex pattern.
 *   `re.fullmatch()`: Return a Match object if the whole string matches a pattern
 
-## re.match
+## Examples
 
-### Basic Pattern Matching
+### Email Validation
+
 ```python
-import re
-
-pattern = r'\d+'
-string = '123abc'
-
-match = re.match(pattern, string)
-if match:
-    print("Match found:", match.group())
-else:
-    print("No match")
+def is_valid_email(email):
+    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    match = re.match(pattern, email)
+    if match:
+        return True
+    else:
+        return False
 ```
 
-### Case Insensitive Matching
+### Extract Emails from text file
 
 ```python
 import re
 
-pattern = r'hello'
-string = 'Hello, world!'
-
-match = re.match(pattern, string, re.IGNORECASE)
-if match:
-    print("Match found:", match.group())
-else:
-    print("No match")
+def extract_emails_from_file(file_path):
+    pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+    with open(file_path, 'r') as file:
+        content = file.read()
+    emails = re.findall(pattern, content)
+    return emails
 ```
 
-### Using Groups in Patterns
+### Split by Commas and Spaces
 
 ```python
 import re
 
-pattern = r'(\d{3})-(\d{2})-(\d{4})'
-string = '123-45-6789'
+def split_str_by_pattern(content, pattern):
+    output = re.split(pattern, content)
+    return output
 
-match = re.match(pattern, string)
-if match:
-    print("Match found:", match.group())
-    print("Group 1:", match.group(1))
-    print("Group 2:", match.group(2))
-    print("Group 3:", match.group(3))
-else:
-    print("No match")
+content = "apple, orange,banana , grape, lemon"
+pattern = r',\s*'
+output = split_str_by_pattern(content, pattern)
+print(output)
 ```
