@@ -30,4 +30,4 @@
 28. [Logging Module](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/logging-module)
 29. [Reggular expressions](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/regex-module)
 30. [Exceptions handling](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/exceptions)
-31. [Pip Packages]()
+31. [Pip Packages](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/pip-packages)
