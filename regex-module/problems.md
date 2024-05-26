@@ -61,9 +61,7 @@
 59.  Match a negative number.
 60.  Validate a Belgian VAT number.
 61.  Extract the subdomain from a URL.
-62.  Match a time in the format HH:MM
-    
-    .
+62.  Match a time in the format HH:MM.
 63.  Validate a Russian passport number.
 64.  Extract all non-alphanumeric characters from a text.
 65.  Match a date in the format MM/DD/YYYY.
@@ -72,9 +70,7 @@
 68.  Match a decimal number.
 69.  Validate a Mexican CURP number.
 70.  Extract all capital letters from a text.
-71.  Match a time in the format HH
-    
-    (12-hour format).
+71.  Match a time in the format HH (12-hour format).
 72.  Validate an Australian Business Number (ABN).
 73.  Extract the directory path from a file path.
 74.  Match a simple mathematical expression (e.g., 3+4).
