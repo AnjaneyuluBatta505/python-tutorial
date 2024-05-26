@@ -34,5 +34,51 @@
 *   `re.split()`: Splits a string by the occurrences of the regex pattern.
 *   `re.fullmatch()`: Return a Match object if the whole string matches a pattern
 
+## re.match
 
+### Basic Pattern Matching
+```python
+import re
 
+pattern = r'\d+'
+string = '123abc'
+
+match = re.match(pattern, string)
+if match:
+    print("Match found:", match.group())
+else:
+    print("No match")
+```
+
+### Case Insensitive Matching
+
+```python
+import re
+
+pattern = r'hello'
+string = 'Hello, world!'
+
+match = re.match(pattern, string, re.IGNORECASE)
+if match:
+    print("Match found:", match.group())
+else:
+    print("No match")
+```
+
+### Using Groups in Patterns
+
+```python
+import re
+
+pattern = r'(\d{3})-(\d{2})-(\d{4})'
+string = '123-45-6789'
+
+match = re.match(pattern, string)
+if match:
+    print("Match found:", match.group())
+    print("Group 1:", match.group(1))
+    print("Group 2:", match.group(2))
+    print("Group 3:", match.group(3))
+else:
+    print("No match")
+```
