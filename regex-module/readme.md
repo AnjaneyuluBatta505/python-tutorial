@@ -75,3 +75,27 @@ pattern = r',\s*'
 output = split_str_by_pattern(content, pattern)
 print(output)
 ```
+
+### Extract domain from URL
+
+```python
+import re
+
+def extract_domain(url):
+    pattern = r'^(?:https?://)?(?:www\.)?([^:/\n?]+)'
+    match = re.search(pattern, url)
+    if match:
+        return match.group(1)
+    return None
+
+urls = [
+    "http://www.example.com/path/to/page",
+    "https://example.org",
+    "https://sub.domain.co.uk/path?query=param",
+    "http://www.example.com:8080"
+]
+
+for url in urls:
+    print(f"URL: {url} -> Domain: {extract_domain(url)}")
+
+```
