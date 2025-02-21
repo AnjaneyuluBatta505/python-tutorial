@@ -1,6 +1,4 @@
-# python - if..elif...else
-
-# Usage
+# if..elif...else
 
 * Used for decision making
 * Determine which block of code to execute based on a specific condition.
