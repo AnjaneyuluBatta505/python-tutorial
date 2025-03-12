@@ -4,6 +4,10 @@
 * It is useful for tasks like I/O operations, network requests, and GUI applications.
 * However, due to Python's Global Interpreter Lock (GIL), multi-threading is not ideal for CPU-bound tasks.
 
+
+![image](https://github.com/user-attachments/assets/4ae58044-ad83-4895-957e-7af6f9e8e856)
+
+
 ## **1. Understanding Threads**
 * A thread is the smallest unit of execution in a process.
 * Multi-threading allows running multiple threads simultaneously, improving efficiency for I/O-bound tasks.
