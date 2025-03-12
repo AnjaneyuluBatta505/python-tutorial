@@ -319,6 +319,8 @@ for item in iterator:
 ```python
 from itertools import combinations_with_replacement
 
+numbers = [1,2,3]
+
 iterator = combinations_with_replacement(numbers, r=2)
 
 for item in iterator:
