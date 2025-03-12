@@ -1,4 +1,4 @@
-# Python logging module
+# logging module
 
 1. **Basic Logging Setup** – Create a simple script that logs messages at different severity levels (`DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`).  
 2. **Rotating Log Files** – Implement rotating logs using `RotatingFileHandler` to limit log file size and create backups.  
