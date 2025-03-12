@@ -7,6 +7,10 @@
 
 ![image](https://github.com/user-attachments/assets/4ae58044-ad83-4895-957e-7af6f9e8e856)
 
+## thread life cycle
+
+![image](https://github.com/user-attachments/assets/4ae5bfcb-083c-4e42-bb37-ed4398a92d64)
+
 
 ## **1. Understanding Threads**
 * A thread is the smallest unit of execution in a process.
