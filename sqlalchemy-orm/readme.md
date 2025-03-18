@@ -1,4 +1,4 @@
-# Step-by-Step Guide to Learning SQLAlchemy
+# SQLAlchemy
 
 * SQLAlchemy is a powerful SQL toolkit and Object Relational Mapper (ORM) for Python.
 * It allows developers to interact with databases in a more Pythonic way while maintaining flexibility and efficiency.
