@@ -43,3 +43,4 @@
 41. [Unit testing](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/unit-tests)
 42. [Pip Packages](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/pip-packages)
 43. [Python virtual environment](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/virtual-environment)
+44. [Python Projects](https://github.com/AnjaneyuluBatta505/python-tutorial/tree/main/projects)
