@@ -219,34 +219,3 @@ cursor.execute("SELECT * FROM users")
 print(cursor.fetchall())
 conn.close()
 ```
-
----
-
-## Using ORM with MySQL (SQLAlchemy)
-Instead of raw SQL, **SQLAlchemy** provides an ORM to interact with MySQL:
-```sh
-pip install sqlalchemy
-```
-
-Example ORM Model:
-```python
-from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-
-Base = declarative_base()
-engine = create_engine("mysql+mysqlconnector://root:your_password@localhost/mydatabase")
-Session = sessionmaker(bind=engine)
-session = Session()
-
-class User(Base):
-    __tablename__ = 'users'
-    id = Column(Integer, primary_key=True)
-    name = Column(String(100))
-    email = Column(String(100))
-    age = Column(Integer)
-
-Base.metadata.create_all(engine)
-```
-
-
