@@ -1,4 +1,4 @@
-# Python - Itertools Module
+# Itertools Module
 
 * `itertools` is a built-in module
 * It provides fast, memory-efficient way of looping through iterables
