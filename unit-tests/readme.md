@@ -1,78 +1,209 @@
-# Python - Unit testing
+# **Unit Testing**  
 
-* Unit testing is a software testing technique where individual units or components of the software are tested in isolation from the rest of the application.
-* The primary goal is to validate that each unit of the software performs as expected.
-* Unit testing is a critical practice to ensure code reliability, catch bugs early, and facilitate maintenance.
-* Python has built-in module `unittest` module to perform unit testing.
-* External python packages like pytest, nose2, etc. are also available.
+## 1. Introduction
+* Unit testing is a software testing method where **individual components (units)** of a program are tested to determine if they work as expected.
+* These tests are typically **automated** and help catch bugs early in the development cycle.  
 
+---
 
-## Factorial - Unit test
+## **2. Importance of Unit Testing**  
+- Ensures code correctness  
+- Helps in **early bug detection**  
+- Makes code **maintainable and scalable**  
+- Facilitates **refactoring without breaking functionality**  
+- Supports Test-Driven Development (**TDD**)  
 
-> fact.py
+---
 
+## **3. Python’s `unittest` Module**  
+Python comes with a **built-in testing** framework called **`unittest`**, inspired by Java’s JUnit.  
+
+### **Key Features of `unittest`**  
+✅ Based on **object-oriented testing**  
+✅ Uses **test discovery** mechanism  
+✅ Supports **test fixtures (`setUp` & `tearDown`)**  
+✅ Provides **mocking capabilities**  
+
+**To use `unittest`, first import the module:**
 ```python
-def factorial(num):
-  output = 1
-  for index in range(1, num+1):
-    output = output * index
-  return output
+import unittest
 ```
 
-* Lets write the unittest for factorial.
+---
+
+## **4. Writing Your First Unit Test**  
+A simple example of a test case using `unittest`:  
 
 ```python
 import unittest
 
-from fact import factorial
+def add(x, y):
+    return x + y
 
-class TestFactorial(unittest.TestCase):
-    
-    def test_factorial_of_zero(self):
-        self.assertEqual(factorial(0), 1)
-    
-    def test_factorial_of_one(self):
-        self.assertEqual(factorial(1), 1)
-    
-    def test_factorial_of_five(self):
-        self.assertEqual(factorial(5), 120)
-    
-    def test_factorial_of_ten(self):
-        self.assertEqual(factorial(10), 3628800)
-    
-    def test_large_input(self):
-        self.assertEqual(factorial(20), 2432902008176640000)
-    
-    def test_factorial_of_large_number(self):
-        self.assertEqual(factorial(15), 1307674368000)
+class TestMathOperations(unittest.TestCase):
+    def test_addition(self):
+        self.assertEqual(add(2, 3), 5)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
 ```
 
-## Common assertion methods
+---
 
-|Assertion Method|Description|Example|
-|--- |--- |--- |
-|assertEqual(a, b)|Checks that a is equal to b.|self.assertEqual(1 + 1, 2)|
-|assertNotEqual(a, b)|Checks that a is not equal to b.|self.assertNotEqual(1 + 1, 3)|
-|assertTrue(x)|Checks that x is True.|self.assertTrue(3 > 2)|
-|assertFalse(x)|Checks that x is False.|self.assertFalse(2 > 3)|
-|assertIs(a, b)|Checks that a is b (they are the same object).|self.assertIs(a, a)|
-|assertIsNot(a, b)|Checks that a is not b (they are not the same object).|self.assertIsNot(a, b)|
-|assertIsNone(x)|Checks that x is None.|self.assertIsNone(None)|
-|assertIsNotNone(x)|Checks that x is not None.|self.assertIsNotNone(3)|
-|assertIn(a, b)|Checks that a is in b.|self.assertIn(3, [1, 2, 3])|
-|assertNotIn(a, b)|Checks that a is not in b.|self.assertNotIn(4, [1, 2, 3])|
-|assertIsInstance(a, b)|Checks that a is an instance of b.|self.assertIsInstance(3, int)|
-|assertNotIsInstance(a, b)|Checks that a is not an instance of b.|self.assertNotIsInstance(3, str)|
-|assertRaises(exc, fun, *args, **kwds)|Checks that fun(*args, **kwds) raises exc.|self.assertRaises(ValueError, int, 'a')|
-|assertAlmostEqual(a, b)|Checks that a is almost equal to b (for floating point numbers).|self.assertAlmostEqual(1.0000001, 1.0000002, places=6)|
-|assertNotAlmostEqual(a, b)|Checks that a is not almost equal to b.|self.assertNotAlmostEqual(1.0001, 1.0002, places=4)|
-|assertGreater(a, b)|Checks that a is greater than b.|self.assertGreater(5, 3)|
-|assertGreaterEqual(a, b)|Checks that a is greater than or equal to b.|self.assertGreaterEqual(5, 5)|
-|assertLess(a, b)|Checks that a is less than b.|self.assertLess(3, 5)|
-|assertLessEqual(a, b)|Checks that a is less than or equal to b.|self.assertLessEqual(3, 3)|
-|assertRegex(s, r)|Checks that the regular expression r matches string s.|self.assertRegex('hello world', r'hello')|
-|assertNotRegex(s, r)|Checks that the regular expression r does not match string s.|self.assertNotRegex('hello world', r'world!')|
-|assertCountEqual(a, b)|Checks that a and b have the same elements, regardless of order.|self.assertCountEqual([1, 2, 3], [3, 1, 2])|
+## **5. Assertions in `unittest`**  
+Assertions check whether conditions hold true. Common assertion methods:  
+
+| Assertion Method | Description |
+|-----------------|-------------|
+| `assertEqual(a, b)` | Check if `a == b` |
+| `assertNotEqual(a, b)` | Check if `a != b` |
+| `assertTrue(x)` | Check if `x` is `True` |
+| `assertFalse(x)` | Check if `x` is `False` |
+| `assertIsNone(x)` | Check if `x is None` |
+| `assertIsNotNone(x)` | Check if `x is not None` |
+| `assertIn(a, b)` | Check if `a in b` |
+| `assertNotIn(a, b)` | Check if `a not in b` |
+
+**Example:**
+```python
+def is_even(num):
+    return num % 2 == 0
+
+class TestNumbers(unittest.TestCase):
+    def test_is_even(self):
+        self.assertTrue(is_even(4))
+        self.assertFalse(is_even(5))
+```
+---
+
+## **6. Test Fixtures (`setUp` and `tearDown`)**  
+Test fixtures are setup and teardown methods that **run before and after each test**.
+
+```python
+class TestExample(unittest.TestCase):
+    def setUp(self):
+        print("Setting up...")
+
+    def tearDown(self):
+        print("Cleaning up...")
+
+    def test_sample(self):
+        print("Running test")
+        self.assertEqual(1 + 1, 2)
+```
+
+### **Execution Order:**  
+1. `setUp()` runs before each test.  
+2. The test method runs.  
+3. `tearDown()` runs after each test.  
+
+---
+
+## **7. Running and Discovering Tests**  
+### **Running Tests from the Command Line**  
+Save the test file as `test_math.py` and run:  
+````bash
+python -m unittest test_math.py
+````
+
+### **Running All Tests in a Directory**  
+````bash
+python -m unittest discover
+````
+
+---
+
+## **8. Mocking in Unit Testing (`unittest.mock`)**  
+Mocking is used to replace real objects with fake ones.  
+
+```python
+from unittest.mock import MagicMock
+
+class Service:
+    def fetch_data(self):
+        return "Real Data"
+
+service = Service()
+service.fetch_data = MagicMock(return_value="Mocked Data")
+
+print(service.fetch_data())  # Output: Mocked Data
+```
+
+---
+
+## **9. Parameterized Testing**  
+Use `subTest()` to test multiple cases within a single test method.  
+
+```python
+class TestMath(unittest.TestCase):
+    def test_addition(self):
+        test_cases = [(1, 2, 3), (2, 2, 4), (3, 5, 8)]
+        for x, y, expected in test_cases:
+            with self.subTest(x=x, y=y):
+                self.assertEqual(add(x, y), expected)
+```
+
+---
+
+## **10. Handling Expected Failures**  
+To test expected failures, use `assertRaises()`.  
+
+```python
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
+
+class TestDivision(unittest.TestCase):
+    def test_divide_by_zero(self):
+        with self.assertRaises(ValueError):
+            divide(5, 0)
+```
+
+---
+
+## **11. Skipping Tests**  
+Skip tests using `@unittest.skip` decorators.  
+
+```python
+class TestExample(unittest.TestCase):
+    @unittest.skip("Skipping this test")
+    def test_skip(self):
+        self.assertEqual(1 + 1, 2)
+```
+
+---
+
+## **12. Code Coverage and Best Practices**  
+### **Measuring Code Coverage**
+Use `coverage.py` to check test coverage.  
+
+````bash
+pip install coverage
+coverage run -m unittest discover
+coverage report -m
+````
+
+### **Best Practices**
+✅ Keep tests **small and isolated**  
+✅ Use **descriptive test names**  
+✅ Run tests **frequently**  
+✅ Use **mocking for dependencies**  
+✅ Ensure **high code coverage**  
+
+---
+
+## **13. Alternative Testing Frameworks**
+Besides `unittest`, other popular testing frameworks include:  
+
+### **1. `pytest` (Recommended)**
+- Simpler and more powerful than `unittest`.  
+- Supports fixtures and parameterized tests.  
+- Run tests using:  
+  ````bash
+  pytest test_file.py
+  ````
+
+### **2. `nose2`**
+- Extension of `unittest`.  
+- Supports plugins for enhanced testing.  
