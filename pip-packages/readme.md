@@ -1,4 +1,4 @@
-# Python - Pip Packags
+# Pip Packags
 
 * Pip is the default package manager for Python, used for installing and managing software packages written in Python.
 * It connects to the Python Package Index (PyPI), a repository of software for the Python programming language.
