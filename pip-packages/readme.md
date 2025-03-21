@@ -18,7 +18,7 @@ pip uninstall requests
 ### upgrade package using pip
 
 ```bash
-pip upgrade requests
+pip install requests --upgrade
 ```
 
 ### list all packages
